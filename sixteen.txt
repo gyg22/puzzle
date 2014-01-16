@@ -1,0 +1,2 @@
+Write a bash script that takes as its argument the name of a process, and prints out its pid if it is running. If it is not running, it waits until it starts running and then prints out its pid.
+

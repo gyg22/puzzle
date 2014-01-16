@@ -1,0 +1,39 @@
+/*style works in firefox*/
+
+div {
+  width: 485px;
+  height: 295px;
+  background-color: #002752;
+  font-family: monospace;
+  color: white;
+  border-right: 3px #55595C outset;
+  border-bottom: 3px #55595C outset;
+}
+
+div ul{
+  list-style: none;
+  padding-top: 15%;
+  margin-bottom: 18%;
+  text-align: center;
+}
+
+li.company {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+li.person {
+  font-size: 2.2em;
+}
+
+span.mail {
+  margin-left: 2.5em;
+}
+
+span.phone {
+  margin-left: 6em;
+}
+
+span.fax {
+  margin-left: 10.2em;  
+}

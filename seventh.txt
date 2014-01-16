@@ -1,0 +1,2 @@
+Write a simple PHP program (not using any frameworks) that takes the output from this URL and displays it in a nice-looking format using HTML/CSS. Please allow the user to customize the stock symbols (YHOO, AAPL, GOOG, MSFT) and enter their own using a HTML form. http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22YHOO%22%2C%22AAPL%22%2C%22GOOG%22%2C%22MSFT%22)%0A%09%09&env=http%3A%2F%2Fdatatables.org%2Falltables.env&format=json
+

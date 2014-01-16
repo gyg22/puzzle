@@ -1,0 +1,15 @@
+source "https://www.rubygems.org"
+
+group :production do
+  gem 'sinatra'
+  gem 'datamapper'
+  gem 'dm-sqlite-adapter'
+end
+
+group :development do
+ gem 'sinatra-reloader'
+end
+
+group :test do
+  gem 'minitest'
+end

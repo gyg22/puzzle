@@ -1,0 +1,4 @@
+Describe one major difference between Git and SVN. Under what situations would you use Git and in what situations SVN?
+
+
+

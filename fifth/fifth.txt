@@ -1,0 +1,19 @@
+//sql works in mysql; i don't know if i understand requirement, :).
+
+create database development;
+
+create table subscribers (id integer not null auto_increment, email varchar(255), primary key(id));
+insert into subscribers (email) values ('user1@test.com');
+insert into subscribers (email) values ('user2@test.com');
+
+create table links (id integer not null auto_increment, url varchar(255), primary key(id));
+insert into links (url) values ('http://www.test.com');
+insert into links (url) values ('http://www.test.com/posts');
+
+create table subscriber_links (subscriber_id integer not null, link_id integer not null, primary key(subscriber_id, link_id));
+insert into subscriber_links (subscriber_id, link_id) values (1, 1);
+insert into subscriber_links (subscriber_id, link_id) values (1, 2);
+insert into subscriber_links (subscriber_id, link_id) values (2, 1);
+insert into subscriber_links (subscriber_id, link_id) values (2, 2);
+
+select * from subscribers inner join subscriber_links on subscribers.id = subscriber_links.subscriber_id;

@@ -1,0 +1,1 @@
+What are the advantages of writing a program in Adobe AIR? What are the disadvantages? Please write a very simple one-file HTML/CSS/JS Adobe AIR app that 

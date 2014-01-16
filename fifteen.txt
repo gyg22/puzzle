@@ -1,0 +1,7 @@
+Write a DNS zone file that will point all subdomains of the domain "test.com" to the IP 1234.
+
+domain A 1.2.3.4
+
+
+
+
