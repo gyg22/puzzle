@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-
+  
+  #returns validating rule by endian
   def self.birthday_format
     date_format = EAccent::Application::AppConfig['date_format']    
     case date_format
@@ -12,10 +13,13 @@ class User < ActiveRecord::Base
     end
   end
       
+  #validates by different endian
   validates :birthday, format: {with: lambda{|user| User.birthday_format}}
   
+  #before create or update, make birthday consistent
   before_save :format_date
   
+  #converts birthday into endian specific format
   def birthday_to_endian
     year, month, day = self.birthday.split('-') 
     date_format = EAccent::Application::AppConfig['date_format']    
