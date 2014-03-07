@@ -1,0 +1,9 @@
+source 'http://ruby.taobao.org'
+
+gem 'rails', '4.0.0'
+gem 'sqlite3'
+
+group :development, :test do
+  gem 'factory_girl_rails', '~>4.3.0'
+  gem 'rspec-rails', '~>2.14.1'
+end 
